@@ -84,8 +84,15 @@ Streams ----> very important api in java , it is saves our time, by using how ea
 it is a pipeline or production  line and what it does, it seperates the list inot elements
 and then map function used to convert to modify the element after to unite or collect these elements into a list,
 we will need to collect function Collect() --> in parentheses need to specify, we would like to get as an output.
- 
 
+
+Functional Programming -Built In Intefaces 
+1. consumer --> which takes one argument and returns no result
+2. biconsumer-->  takes two parameters and returns no result
+3. bifunction --> takes two arguments and returns something
+4. Predicate --> takes one parameters and returns boolean value
+5. unaryoperator --> takes an argument and returns something wiht same type
+6. supplier --> which is used when there is no argument but return something
 
 
 
