@@ -1,0 +1,129 @@
+what is the problem with object oriented programming 
+Infact nothing, but something can done easier with functional programming.it doesn't mean
+we can do things functional programming and which we can't done with object oriented programming,
+well everthing  can done from both ends
+
+
+Why we need functional programming?
+In some cases, functional programming can make our code better, more
+readable with less typing. In java both obj and fuprogramming both are used.
+
+What  is functional programming ?
+It is a programming paradigm where functions can act just like variables. in object oriented programming
+we can pass the data one program to another program but we can't pass the actions i mean functions and that's
+what we can achieve with functional programming. we can create supperate functions actions that can pass on.
+
+what funcitonal programming gives us?
+
+In oop everything must connect to a class. there are no funcitons are isolated from a class.
+
+In functional programming you can pass on functions(actions) 
+
+disadvantages:
+
+1. you can't do anyting new Where things we can create in oop
+2. seems complicated (but some cases complicated and hard to understanding  )
+3. mindset shift that means you have to look in variable view where funcations can exchange
+
+
+Advantages:
+ Better but less
+ more readable 
+ more maintainable code
+
+EX: 	
+
+What we should have?
+public void greet(action){
+ action();
+}
+
+here we have achieve value of that variable is function, note the result of the function
+
+LoggerInUser = public void perform(){
+syso(welcome back);
+};
+
+1. bcz function name should be avliabe every level
+public  LoggerInUser =         void perform(){
+syso(welcome back);
+};
+
+2. here we are using name of the variable, so we don't need method name and remove method name also  
+public  LoggerInUser =         void 		(){
+syso(welcome back);
+};
+
+3. here java compiler figures out what is return type of the functions, so no need to wriet void
+
+ LoggerInUser =         		(){
+syso(welcome back);
+};
+
+4. One more additon needed here, arrow operator needed here
+
+loggerInUser =() -> {
+syso(welcome back);
+};
+
+Lambda Expression
+
+loggerInUser =() -> {syso(welcome back)};
+
+
+
+loggerInUser =() -> (syso(welcome back));	
+WelcomeMessageService.greet(loggerInUser);	
+
+OR
+WelcomeMessageService.greet(() -> syso(welcome back));	
+
+so Lambda expressions are used in streams mostly,
+
+Streams ----> very important api in java , it is saves our time, by using how easy it is to filter and Change a collections
+it is a pipeline or production  line and what it does, it seperates the list inot elements
+and then map function used to convert to modify the element after to unite or collect these elements into a list,
+we will need to collect function Collect() --> in parentheses need to specify, we would like to get as an output.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
