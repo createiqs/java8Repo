@@ -8,6 +8,7 @@ public class ConsumerDemo {
 	public static void main(String[] args) {
 		Consumer<Integer> printMultipleNumbers = n -> System.out.println(n * 4);
 		printMultipleNumbers.accept(10);
+		printMultipleNumbers.accept(20);
 
 		Consumer<List<Integer>> mulitplyNumbers = l -> {
 

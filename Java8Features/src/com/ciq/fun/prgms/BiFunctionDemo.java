@@ -18,11 +18,9 @@ public class BiFunctionDemo {
 			}
 
 			return generatedList;
-			
-			 	
 
 		};
-		
+
 		System.out.println(numbers.apply(10, 2));
 
 	}
