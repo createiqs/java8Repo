@@ -94,7 +94,9 @@ Functional Programming -Built In Intefaces
 5. unaryoperator --> takes an argument and returns something wiht same type
 6. supplier --> which is used when there is no argument but return something
 
-
+what is Stream are?
+Streams are sequence of objects like map, queue and list that support various methods which can be chained to produce
+the desired results
 
 
 
