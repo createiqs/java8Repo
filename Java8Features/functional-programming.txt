@@ -98,6 +98,11 @@ what is Stream are?
 Streams are sequence of objects like map, queue and list that support various methods which can be chained to produce
 the desired results
 
+not a data structure, instead take a data structure
+not changing the original data structure
+intermediate operations can be changed
+terminal operations ends the stream and returns something
+
 
 
 
