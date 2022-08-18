@@ -1,7 +1,7 @@
 package com.ciq.method.streams.prgms;
 
 
-public class Person  {
+public class Person implements	Comparable<Person> {
 //implements	Comparable<Person>
 	private String name;
 	private int age;
@@ -24,11 +24,11 @@ public class Person  {
 		return "Person{" + "name='" + name + '\'' + ", age=" + age + '}';
 	}
 
-//	@Override
-//	public int compareTo(Person o) {
-//		 
-//		return this.getAge().compareTo(o.getAge());
-//	}
+	@Override
+	public int compareTo(Person o) {
+		 
+		return this.getAge().compareTo(o.getAge());
+	}
 
  
 }
