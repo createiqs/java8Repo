@@ -2,8 +2,8 @@ package com.ciq.method.streams.prgms;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
-
 
 public class EmpApp {
 
@@ -20,13 +20,11 @@ public class EmpApp {
 		Employee e4 = new Employee(202, "sai", 55000.00, dept5);
 		Employee e5 = new Employee(204, "vani", 45000.00, dept4);
 		Employee e6 = new Employee(206, "ram", 47000.00, dept2);
-		
 
-		List<Employee> employees = List.of(e1, e2, e3, e4, e5,e6  );
-		
-	System.out.println( employees.stream()
-		.collect(Collectors.summarizingDouble(Employee::getSalary)).getMax());
-		
+		List<Employee> employees = List.of(e1, e2, e3, e4, e5, e6);
+
+//		System.out.println(employees.stream().collect(Collectors.summarizingDouble(Employee::getSalary)).getMin());
+
 //		List<Employee> emps=new ArrayList<>();
 //		Employee e7 = new Employee(205, "akbar", 45000.00, dept3);
 //		Employee e8 = new Employee(207, "amar", 47000.00, dept3);
@@ -36,12 +34,19 @@ public class EmpApp {
 //		filter(p -> p.getDept().getDeptName().equalsIgnoreCase("tl") && p.getSalary()<50000.00)
 //		.forEach(s -> System.out.println(s));
 //		employees.stream()
-		//.filter(ed-> ed.getSalary()>25000.00)
+		// .filter(ed-> ed.getSalary()>25000.00)
 //		.forEach(emps::add);
-		
-//		System.out.println(emps);
-		
 
+//		System.out.println(emps);
+
+//		Map<Boolean, List<Employee>> partitionByDept = employees.stream()
+//				.collect(Collectors.partitioningBy(p -> p.getDept().getDeptName().equalsIgnoreCase("SE")));
+//		System.out.println(partitionByDept.entrySet().stream().collect(Collectors.toList()));
+		
+//		Map<Object, List<Employee>> groupBy = employees.stream()
+//				.collect(Collectors.groupingBy(s-> s.getDept().getDeptName().equalsIgnoreCase("SE")));
+//		System.out.println(groupBy);
+//		System.out.println(partitionByDept.entrySet().stream().collect(Collectors.toList()));
 	}
 
 }

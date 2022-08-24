@@ -1,6 +1,7 @@
 package com.ciq.method.streams.prgms;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -16,21 +17,22 @@ public class CollectToApp {
 //		.distinct()
 //		.forEach(s->System.out.println(s));
 
+//		Set<String> sets=new HashSet<>(fruits);
 //		Set<String> avlaibleFruits = fruits.stream()
 //				.filter(fruit -> fruit.startsWith("w"))
 //				.collect(Collectors.toSet());
 //		System.out.println(avlaibleFruits);
 		
-//		Collection<String> fruitBoxes=
-//				fruits.stream()
-////				.collect(Collectors.toCollection(LinkedList::new));
-//				.collect(Collectors.toCollection(TreeSet::new));
-//		System.out.println(" tocollection implementation");
-//		System.out.println(fruitBoxes);
+		Collection<String> fruitBoxes=
+				fruits.stream()
+//				.collect(Collectors.toCollection(LinkedList::new));
+				.collect(Collectors.toCollection(TreeSet::new));
+		System.out.println(" tocollection implementation");
+		System.out.println(fruitBoxes);
 		
 		Map<String, String> fruitsNamesWithUpperCase=
 				fruits.stream()
-				.distinct()
+//				.distinct()
 //				.collect(Collectors.toMap(fruit -> fruit ,  String::toUpperCase));
 				.collect(Collectors.toMap(Function.identity() ,  String::toUpperCase));
 		System.out.println(fruitsNamesWithUpperCase);

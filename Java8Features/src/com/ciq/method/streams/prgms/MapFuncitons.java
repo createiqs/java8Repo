@@ -9,6 +9,9 @@ public class MapFuncitons {
 		List<String> capatilized=names.stream()
 				.map(name -> name.substring(0, 1).toUpperCase()+ name.substring(1))
 				.collect(Collectors.toList());
+//		System.out.println(capatilized);
+//				.filter
+//				.forEach(s-> System.out.println(s));
 		
 		System.out.println(capatilized);
 		
@@ -22,14 +25,17 @@ public class MapFuncitons {
 				);
 		
 		List<String> productNames=products.stream()
-//				.map(name ->name.getBrand())
-				.map(Product::getName)
+				.map(name ->name.getName())
+//				.map(Product::getName)
 				.collect(Collectors.toList());
 		System.out.println(productNames);
 		
 		List<Product> productNamesPrices=products.stream()
-				.map(pr -> new Product(pr.getBrand(), pr.getName(), pr.getPrice()* 1.5, pr.getRating()) 
-				).collect(Collectors.toList());
+				.map(pr -> new Product(pr.getBrand(),
+						pr.getName(), 
+						pr.getPrice()* 1.5, 
+						pr.getRating()))
+				.collect(Collectors.toList());
 		
 		System.out.println(productNamesPrices);
 
